@@ -1,0 +1,15 @@
+{
+  "name": "shareshell",
+  "version": "1.0.0",
+  "description": "shared shell experience",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "colyseus": "^0.16.4"
+  }
+}
