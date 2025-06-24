@@ -3,6 +3,7 @@ import { WebSocketTransport } from "@colyseus/ws-transport";
 import express from "express";
 import cors from "cors";
 import http from "http";
+import chatroom from "./chatroom.js";
 
 // configure port
 const port = process.env.port || 3000;
@@ -20,7 +21,7 @@ const gameServer = new Server({
 });
 
 // create a room called progami
-gameServer.define("progami", Room);
+gameServer.define("progami", chatroom);
 
 // setup the public folder
 app.use(express.static("public"));
