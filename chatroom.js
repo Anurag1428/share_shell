@@ -8,4 +8,13 @@ export default class ChatRoom extends Room {
     onDispose(options) {
         console.log("ChatRoom destroyed!!!!",options);
     }
+
+    onJoin(client) {
+        console.log(`client ${client.sessionId} joined the room`);
+    }
+    
+    onLeave(client) {
+        console.log(`client ${client.sessionId} left the room`);
+    }
+
 }
